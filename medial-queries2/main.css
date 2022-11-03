@@ -54,7 +54,7 @@ body {
 
 
 .c, .d, .e {
-  flex-basis: 25%;
+  flex-basis: 15%;
     
 }
 h1, h2, p{
@@ -71,7 +71,7 @@ p{
   
 }
 
-/* Moble Version */
+/* Mobile Version */
 @media (max-width: 600px){
   .container-1 {
     flex-direction: row;
