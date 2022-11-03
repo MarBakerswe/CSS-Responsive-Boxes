@@ -1,3 +1,67 @@
 body {
-  background: blanchedalmond;
+  background: rgb(75, 2, 14);
 }
+
+.container{
+  display: flex;
+  background-color: rgb(75, 2, 14);
+}
+
+.a, .b, .c{
+  border: solid 0.1em rgb(255, 255, 255);
+  background-color: rgb(253, 190, 188);
+  padding: 1em;
+  flex-grow: 1;
+  font-family: 'Shalimar', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 10px;
+
+}
+
+.a:hover, .b:hover, .c:hover{
+  color: white;
+  cursor: pointer;
+  background-color: rgb(75, 2, 14)
+  transition: 0.5s;
+  border: solid 0.1em rgb(255, 255, 255);
+  transition: 0.5s;
+  
+}
+
+p{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Shalimar', cursive;
+  text-align: center;
+}
+
+h1, h2{
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Shalimar', cursive;
+}
+
+@media (min-width: 600px){
+        .container {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .a{
+          width: 100%;
+         
+        }
+
+      .b {
+        width: 50%;
+       
+      }
+    }
+    
+@media (max-width: 600px){
+      .container {
+        flex-direction: column;
+      }
+  }
+

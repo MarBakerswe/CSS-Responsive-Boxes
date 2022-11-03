@@ -1,3 +1,108 @@
 body {
-  background: peachpuff;
+  background: rgb(75, 2, 14);
+}
+
+.container-1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(75, 2, 14);
+
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h {
+  border: solid 0.1em rgb(255, 255, 255);
+  background-color: rgb(253, 190, 188);
+  padding: 1em;
+  flex-grow: 1;
+  font-family: 'Shalimar', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+
+}
+
+.a:hover, .b:hover, .c:hover, .d:hover, .e:hover, .f:hover, .g:hover, .h:hover{
+  color: white;
+  cursor: pointer;
+  background-color: rgb(75, 2, 14) opacity 0.5;
+  transition: 0.5s;
+  border: solid 0.1em rgb(255, 255, 255);
+  
+}
+
+h1, h2, p{
+  text-align: center;
+  align-content: center;
+  font-family: 'Shalimar', cursive;
+}
+
+h1, h2{
+  font-size: 45px;
+}
+
+
+p{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Shalimar', cursive;
+  
+}
+
+.a{
+  flex-grow: 1;
+  flex-basis: 100%;
+  margin: 15px 15px 10px 10px;
+}
+
+.b, .c, .d {
+  flex-basis: 25%;
+  margin: 10px;
+  
+}
+
+.e, .f, .g {
+  flex-basis: 25%;
+  margin: 10px;
+  
+}
+
+.h{
+  margin: 10px 15px 10px;
+}
+
+.container-2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 67%;
+  min-height: 30vh;
+}
+
+.b img {
+  width: 100%;
+}
+
+@media (max-width: 600px){
+  .container-1{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container-2{
+    display: flex;
+    flex-basis: 100%;
+  }
+
+  .b, .c, .d {
+    flex-basis: 25%;
+    
+  }
+  
+  .e, .f, .g {
+    flex-basis: 25%;
+    
+  }
+  .container-2{
+    min-height: 45vh;
+  }
 }
